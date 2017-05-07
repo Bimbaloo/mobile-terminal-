@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>前端测试</title>
+    <link rel="stylesheet" type="text/css" href="css/aui.css"/>
+    <link rel="stylesheet" href="css/aui-slide.css">
+    <link rel="stylesheet" href="css/base.css">
+</head>
+<body>
+<header class="aui-bar aui-bar-nav aui-bar-light aui-border-b">
+    <div class="aui-title">想你</div>
+    <a class="aui-pull-right aui-btn aui-btn-outlined">
+        <i class="aui-iconfont aui-icon-search"></i>
+    </a>
+    <div class="aui-searchbar aui-hide" id="search">
+        <div class="aui-searchbar-input aui-border-radius">
+            <i class="aui-iconfont aui-icon-search"></i>
+            <input type="search" placeholder="请输入搜索内容" id="search-input">
+            <div class="aui-searchbar-clear-btn">
+                <i class="aui-iconfont aui-icon-close"></i>
+            </div>
+        </div>
+        <div class="aui-searchbar-btn" tapmode="" style="margin-right: 0px;">取消</div>
+    </div>
+</header>
+
+<div id="contain">
+    <div class="aui-card-list">
+        <div class="aui-card-list-header aui-card-list-user aui-border-b">
+            <div class="aui-card-list-user-name">
+                <div class="h1">今日直播</div>
+                <small>1</small>
+            </div>
+            <div class="aui-card-list-user-info">热卖1 热卖2 热卖3</div>
+        </div>
+        <div class="aui-card-list-content-padded">
+            <div id="aui-slide3">
+                <div class="aui-slide-wrap">
+                    <div class="aui-slide-node bg-dark ">
+                        <img src="image/l1.png"/>
+                    </div>
+                    <div class="aui-slide-node bg-dark">
+                        <img src="image/l2.png"/>
+                    </div>
+                    <div class="aui-slide-node bg-dark">
+                        <img src="image/l3.png"/>
+                    </div>
+                </div>
+                <div class="aui-slide-page-wrap aui-hide"><!--分页容器--></div>
+            </div>
+        </div>
+    </div>
+    <div class="aui-card-list">
+        <div class="aui-card-list-header flex-center">
+            精品推荐
+        </div>
+        <div class="aui-card-list-content-padded aui-border-b aui-border-t min-padding">
+            <div class="aui-row aui-row-padded">
+                <div class="aui-col-xs-3">
+                    <img src="image/l1.png"/>
+                    <span class="aui-card-list-user-info info">精品1</span>
+                </div>
+                <div class="aui-col-xs-3">
+                    <img src="image/l2.png"/>
+                    <span class="aui-card-list-user-info info">精品2</span>
+                </div>
+                <div class="aui-col-xs-3">
+                    <img src="image/l3.png"/>
+                    <span class="aui-card-list-user-info info">精品3</span>
+                </div>
+                <div class="aui-col-xs-3">
+                    <img src="image/l3.png"/>
+                    <span class="aui-card-list-user-info info">精品3</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aui-card-list-header aui-card-list-user aui-border-b">
+        <div class="aui-card-list-user-name">
+            <div class="h1">品牌-猜你喜欢</div>
+            <i class="aui-iconfont aui-icon-my"></i>
+        </div>
+        <div class="aui-card-list-user-info">厂家直销 让利特惠</div>
+        <div class="pic-box">
+            <a class="pic-nav">
+                <div class="pic-info">XX原装进口</div>
+                <div class="pic-info2">把最健康的带给您和您的家人</div>
+                <img class="pic pic-1" src="image/my/f1.png" alt="XX原装进口">
+            </a>
+            <a class="pic-nav">
+                <div class="pic-info">极致感受</div>
+                <div class="pic-info2">最清晰的体验</div>
+                <img class="pic pic-2" src="image/my/f3.png" alt="索尼相机">
+            </a>
+            <a class="pic-nav">
+                <div class="pic-info">好吃又健康</div>
+                <div class="pic-info2">爱的分享</div>
+                <img class="pic pic-3" src="image/my/f5.png" alt="三只松鼠">
+            </a>
+            <a class="pic-nav">
+                <div class="pic-info">一流的体验</div>
+                <div class="pic-info2">非一般的体验</div>
+                <img class="pic pic-4" src="image/my/f2.png" alt="ipad">
+            </a>
+        </div>
+    </div>
+    <div class="aui-card-list-content-padded">
+        <div id="aui-slide4" style="position: relative;height: 240px;margin-top: 1rem">
+            <div class="aui-slide-wrap">
+                <div class="aui-slide-node bg-dark">
+                    <img class="pic-min" src="image/l1.png"/>
+                    <div class="slide-pic-info">走过路过不要错过。。。。</div>
+                </div>
+                <div class="aui-slide-node bg-dark">
+                    <img class="pic-min" src="image/l2.png"/>
+                    <div class="slide-pic-info">走过路过不要错过。。。。</div>
+                </div>
+                <div class="aui-slide-node bg-dark">
+                    <img class="pic-min" src="image/l3.png"/>
+                    <div class="slide-pic-info">走过路过不要错过。。。。</div>
+                </div>
+            </div>
+            <div class="aui-slide-page-wrap"><!--分页容器--></div>
+        </div>
+    </div>
+
+    <div class="aui-card-list">
+        <div class="aui-card-list-header aui-card-list-user aui-border-b">
+            <div class="aui-card-list-user-name">
+                <div class="h1">精品推荐</div>
+                <small>1</small>
+            </div>
+            <div class="aui-card-list-user-info">热卖1 热卖2 热卖3</div>
+        </div>
+        <div class="aui-card-list-content-padded">
+            <div id="aui-slide5">
+                <div class="aui-slide-wrap">
+                    <div class="aui-slide-node bg-dark ">
+                        <img src="image/l2.png"/>
+                    </div>
+                    <div class="aui-slide-node bg-dark">
+                        <img src="image/l3.png"/>
+                    </div>
+                    <div class="aui-slide-node bg-dark">
+                        <img src="image/l1.png"/>
+                    </div>
+                </div>
+                <div class="aui-slide-page-wrap aui-hide"><!--分页容器--></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="aui-card-list">
+        <div class="aui-card-list-header aui-card-list-user aui-border-b">
+            <div class="aui-card-list-user-name">
+                <div class="h1">限量抢购</div>
+            </div>
+            <div class="aui-card-list-user-info">心动不如行动</div>
+        </div>
+        <div class="aui-content aui-margin-b-15">
+            <ul class="aui-list aui-media-list" style="background-image: none">
+                <li class="aui-list-item recommended">
+                    <div class="aui-media-list-item-inner">
+                        <div class="aui-list-item-media">
+                            <img src="image/demo1.png">
+                        </div>
+                        <div class="aui-list-item-inner">
+                            <div class="aui-list-item-text">
+                                <div class="aui-list-item-title">产品A</div>
+                            </div>
+                            <div class="aui-list-item-text">
+                                今日精心为您准备
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="aui-list-item recommended">
+                    <div class="aui-media-list-item-inner">
+                        <div class="aui-list-item-media">
+                            <img src="image/demo1.png">
+                        </div>
+                        <div class="aui-list-item-inner">
+                            <div class="aui-list-item-text">
+                                <div class="aui-list-item-title">产品B</div>
+                            </div>
+                            <div class="aui-list-item-text">
+                                今日精心为您准备
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="aui-list-item recommended">
+                    <div class="aui-media-list-item-inner">
+                        <div class="aui-list-item-media">
+                            <img src="image/demo1.png">
+                        </div>
+                        <div class="aui-list-item-inner">
+                            <div class="aui-list-item-text">
+                                <div class="aui-list-item-title">产品C</div>
+                            </div>
+                            <div class="aui-list-item-text">
+                                今日精心为您准备
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li class="aui-list-item recommended">
+                    <div class="aui-media-list-item-inner">
+                        <div class="aui-list-item-media">
+                            <img src="image/demo1.png">
+                        </div>
+                        <div class="aui-list-item-inner">
+                            <div class="aui-list-item-text">
+                                <div class="aui-list-item-title">产品D</div>
+                            </div>
+                            <div class="aui-list-item-text">
+                                今日精心为您准备
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+
+
+
+</div>
+<footer class="aui-bar aui-bar-tab" id="footer">
+    <div class="aui-bar-tab-item aui-active" tapmode>
+        <i class="aui-iconfont aui-icon-home"></i>
+        <div class="aui-bar-tab-label">首页</div>
+    </div>
+    <div class="aui-bar-tab-item" tapmode>
+        <i class="aui-iconfont aui-icon-star"></i>
+        <div class="aui-bar-tab-label">收藏</div>
+    </div>
+    <div class="aui-bar-tab-item" tapmode>
+        <div class="aui-badge aui-hide"></div>
+        <i class="aui-iconfont aui-icon-cart"></i>
+        <div class="aui-bar-tab-label">购物车</div>
+    </div>
+    <div class="aui-bar-tab-item" tapmode>
+        <div class="aui-dot"></div>
+        <i class="aui-iconfont aui-icon-my"></i>
+        <div class="aui-bar-tab-label">我的</div>
+    </div>
+</footer>
+<script src="http://libs.baidu.com/jquery/2.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/aui-slide.js"></script>
+<script type="text/javascript" src="js/aui-tab.js"></script>
+<script>
+    var slide3 = new auiSlide({
+        container: document.getElementById("aui-slide3"),
+        // "width":300,
+        "height": 240,
+        "speed": 500,
+        "autoPlay": 300000, //自动播放
+        "loop": true,
+        "pageShow": true,
+        "pageStyle": 'line',
+        'dotPosition': 'center'
+    })
+
+    var slide4 = new auiSlide({
+        container: document.getElementById("aui-slide4"),
+        // "width":300,
+        "height": 240,
+        "speed": 500,
+        "autoPlay": 300000, //自动播放
+        "loop": true,
+        "pageShow": true,
+        "pageStyle": 'line',
+        'dotPosition': 'center'
+    })
+
+    var slide5 = new auiSlide({
+        container: document.getElementById("aui-slide5"),
+        // "width":300,
+        "height": 240,
+        "speed": 500,
+        "autoPlay": 300000, //自动播放
+        "loop": true,
+        "pageShow": true,
+        "pageStyle": 'line',
+        'dotPosition': 'center'
+    })
+
+    /* 底部tab切换 */
+    apiready = function () {
+        api.parseTapmode();
+    }
+    var tab = new auiTab({
+        element: document.getElementById("footer")
+    }, function (ret) {
+        console.log(ret);
+        if (ret) {
+            console.log(ret.index)
+        }
+    });
+</script>
+
+</body>
+</html>
