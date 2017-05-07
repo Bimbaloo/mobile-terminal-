@@ -7,28 +7,20 @@
 })(jQuery)
 
 $(function () {
-    $("#head-search").click(
-        function(){
-            search()
-            event.stopPropagation();
-        }
-    )
+    $("#head-search").on("touchend",function(){
+        search()
+    })
 
-   /* $(window).on('click', function (e) {
-        if (e.target.getAttribute("id") !== 'head-search') {
-            cancelSearch()
-        }
-    })*/
-    $("#search-cancel").click(
-        function () {
-            cancelSearch()
-        }
-    )
-/*    $("body").click(
-        function () {
-            cancelSearch()
-        }
-    )*/
+    $("header").on("touchend",function(){
+        event.stopPropagation();
+    })
+    $(window).on('touchend', function (e) {
+        cancelSearch()
+    })
+    $("#search-cancel").on("touchend",function () {
+        cancelSearch()
+    })
+
 
 
 /* 轮播 */
