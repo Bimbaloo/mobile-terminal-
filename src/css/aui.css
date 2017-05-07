@@ -2702,3 +2702,6 @@ header .aui-btn.aui-btn-outlined {border: none}
 .aui-card-list {
 	margin-top: 0.5rem;
 }
+#header .aui-icon-search {
+	color: #757575
+}
